@@ -23,17 +23,13 @@
             <li><a href="/attractions#water">Water Rides</a></li>
           </ul>
         </nav>
-        <div id="book-now">
-          <a href="/book-now">
-            <button>Book Now</button>
-          </a>
-        </div>
+        <a href="/book-now" id="book-now"> Book Now </a>
       </div>
     </header>
     <section id="booking">
       <form action="#" method="POST">
         <label for="date">
-          <h1>
+          <span>
             <!-- icon of a calender -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,11 +49,30 @@
               <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
             Choose a Date
-          </h1>
+          </span>
         </label>
         <input type="date" name="date" id="date" />
 
-        <h1>Entry Tickets</h1>
+        <span>
+          <!-- svg for a ticket -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-ticket"
+          >
+            <path d="M3 11h18v2H3z"></path>
+            <path d="M13 6h8v2h-8zM13 14h8v2h-8z"></path>
+            <path d="M7 9H3a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4"></path>
+          </svg>
+          Entry Tickets</span
+        >
         <div id="ticket-selection">
           <label for="Adult">Full Ticket<span class="price">£50</span></label>
           <input
@@ -95,7 +110,27 @@
           <span id="Senior-cost-preview">£ 0</span>
         </div>
 
-        <h1>Ticket Delivery</h1>
+        <span>
+          <!-- icon for a delivery truck -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-truck"
+          >
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+          Ticket Delivery</span
+        >
         <label for="name">Name</label>
         <input
           type="text"
@@ -117,7 +152,25 @@
           id="phone"
           placeholder="Enter your phone number"
         />
-        <h1>Billing Information</h1>
+        <span>
+          <!-- icon for a credit card -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-credit-card"
+          >
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+            <line x1="1" y1="10" x2="23" y2="10"></line>
+          </svg>
+          Billing Information</span
+        >
         <label for="card-number">Card Number</label>
         <input
           type="text"

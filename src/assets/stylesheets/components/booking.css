@@ -40,6 +40,20 @@ section#booking #ticket-selection label {
     font-size: 1.2em;
 }
 
+section#booking form > label > span {
+    display: block;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+section#booking form > label ~ span {
+    display: block;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
 section#booking .price {
     padding: 10px;
     font-size: 0.7em;
