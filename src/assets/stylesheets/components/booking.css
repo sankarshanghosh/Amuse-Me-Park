@@ -1,0 +1,95 @@
+@import "bookingSummary.css";
+
+section#booking form {
+    max-width: 100%;
+    width: 500px;
+    margin: 0 auto;
+}
+
+section#booking input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: #333 1px solid;
+    font-weight: 600;
+    text-align: center;
+}
+
+section#booking label[for="date"]+input {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-size: 1em;
+    border: #333 1px solid;
+}
+
+section#booking #ticket-selection {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0 auto 40px;
+}
+
+section#booking #ticket-selection label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+}
+
+section#booking .price {
+    padding: 10px;
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+section#booking #ticket-selection span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#booking #ticket-selection ~ label {
+    display:block;
+}
+
+
+section#booking input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: #333 3px solid;
+    background-color: #333;
+    color: #fff;
+}
+
+section#booking input[type="submit"]:hover {
+    background-color: #fff;
+    color: #333;
+    transition: ease-in-out 0.5s;
+}
+
+section#booking #summary > .container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+section#booking #summary h1 {
+    font-size: 2em;
+    margin: 20px auto;
+    text-align: center;
+}
+
+section#booking #summary h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+section#booking #summary p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}

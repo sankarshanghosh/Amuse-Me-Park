@@ -1,0 +1,103 @@
+header {
+    height: 75px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 100px;
+        padding-bottom: 20px;
+    }
+}
+
+header > .container {
+    height: 75px;
+    padding: 10px;
+    background-color: #eee;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+    header > .container {
+        height: 100px;
+        padding: 0;
+    }
+}
+
+header .logo a {
+    display: block;
+    height: 100%;
+}
+
+@media screen and (max-width: 468px) {
+    header .logo {
+        display: none;
+    }
+}
+
+header .logo img {
+    width: auto;
+    height: 100%;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+header nav li {
+    display: block;
+    height: 100%;
+    padding: 10px;
+    border: #333 1px solid;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 100%;
+    vertical-align: middle;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    header nav a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header nav a {
+        font-size: 1em;
+    }
+}
+
+header #book-now {
+    background-color: #333;
+    color: #fff;
+}
+
+header #book-now button {
+    background-color: #333;
+    color: #fff;
+    border: #333 3px solid;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    height: 100%;
+}
+
+header #book-now button:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}

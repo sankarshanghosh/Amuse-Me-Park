@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Amuse Me Park</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    <script src="assets/javascript/booking.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="assets/images/placeholder.png" alt="Amuse Me Park Logo" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/attractions#thrills">High Thrill Rides</a></li>
+            <li><a href="/attractions#land">Land Rides</a></li>
+            <li><a href="/attractions#water">Water Rides</a></li>
+          </ul>
+        </nav>
+        <div id="book-now">
+          <a href="/book-now">
+            <button>Book Now</button>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section id="booking">
+      <form action="#" method="POST">
+        <label for="date">
+          <h1>
+            <!-- icon of a calender -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-calendar"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Choose a Date
+          </h1>
+        </label>
+        <input type="date" name="date" id="date" />
+
+        <h1>Entry Tickets</h1>
+        <div id="ticket-selection">
+          <label for="Adult">Full Ticket<span class="price">£50</span></label>
+          <input
+            type="number"
+            name="Adult"
+            id="Adult"
+            min="0"
+            value="0"
+            onchange="updateAdultCost()"
+          />
+          <span id="Adult-cost-preview">£ 0</span>
+          <label for="Child"
+            >Child (Age 10 or below)<span class="price">£40</span></label
+          >
+          <input
+            type="number"
+            name="Child"
+            id="Child"
+            min="0"
+            value="0"
+            onchange="updateChildCost()"
+          />
+          <span id="Child-cost-preview">£ 0</span>
+          <label for="Senior"
+            >Senior (Age 65 or above)<span class="price">£40</span></label
+          >
+          <input
+            type="number"
+            name="Senior"
+            id="Senior"
+            min="0"
+            value="0"
+            onchange="updateSeniorCost()"
+          />
+          <span id="Senior-cost-preview">£ 0</span>
+        </div>
+
+        <h1>Ticket Delivery</h1>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Enter your phone number"
+        />
+        <h1>Billing Information</h1>
+        <label for="card-number">Card Number</label>
+        <input
+          type="text"
+          name="card-number"
+          id="card-number"
+          placeholder="Enter your card number"
+        />
+        <label for="card-name">Name on Card</label>
+        <input
+          type="text"
+          name="card-name"
+          id="card-name"
+          placeholder="Enter your name"
+        />
+        <label for="card-expiry">Expiry Date</label>
+        <input
+          type="text"
+          name="card-expiry"
+          id="card-expiry"
+          placeholder="Enter your card expiry date"
+        />
+        <label for="card-cvv">CVV</label>
+        <input
+          type="text"
+          name="card-cvv"
+          id="card-cvv"
+          placeholder="Enter your card CVV"
+        />
+        <div id="summary">
+          <h1>Summary</h1>
+          <div class="container">
+            <h2>Subtotal</h2>
+            <p id="subtotal">£0.00</p>
+            <h2>Tax <em>(estimated)</em></h2>
+            <p id="tax">£0.00</p>
+            <h2>Total</h2>
+            <p id="total">£0.00</p>
+          </div>
+        </div>
+        <input type="submit" />
+      </form>
+    </section>
+    <footer>
+      <div id="copyright">
+        <p>&copy; 2022 Amuse Me Park</p>
+      </div>
+    </footer>
+  </body>
+</html>
