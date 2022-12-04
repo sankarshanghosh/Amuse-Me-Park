@@ -1,0 +1,30 @@
+section#testimonials .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+section#testimonials figure {
+    width: 300px;
+    max-width: 33%;
+    margin: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    section#testimonials figure {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section#testimonials figure {
+        max-width: 100%;
+    }
+}
+
+section#testimonials h1 {
+    text-align: center;
+}

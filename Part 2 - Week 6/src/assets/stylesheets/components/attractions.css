@@ -1,0 +1,48 @@
+section#attractions figure {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+section#attractions > div:nth-child(even) figure {
+    flex-direction: row-reverse;
+}
+
+section#attractions figure img {
+    width: 50%;
+}
+
+section#attractions figure figcaption {
+    width: 50%;
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    section#attractions {
+        padding: 0;
+    }
+
+    section#attractions figure {
+        flex-direction: column;
+    }
+
+    section#attractions figure img {
+        width: 100%;
+    }
+
+    section#attractions figure figcaption {
+        width: 100%;
+    }
+}
+
+section#attractions figure figcaption h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section#attractions figure figcaption p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
