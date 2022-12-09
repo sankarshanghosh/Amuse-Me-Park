@@ -32,6 +32,7 @@ function updateTotal() {
     const total = document.getElementById("total");
     const totalCost = (adultCount * 50) + (childCount * 40) + (seniorCount * 40);
     subtotal.innerText = `£ ${totalCost}.00`;
-    tax.innerText = `£ ${Math.round(totalCost * 0.0786 * 100) / 100}`;
-    total.innerText = `£ ${Math.round(totalCost * 1.0786 * 100) / 100}`;
+    tax.innerText = `£ ${(totalCost * 0.0786).toFixed(2)}`;
+    total.innerText = `£ ${(totalCost * 1.0786).toFixed(2)}`;
+
 }
