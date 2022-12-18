@@ -55,24 +55,26 @@
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #fff;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .slideshow-dots button.active-dot {
-    background-color: #333;
+    background-color: yellowgreen;
 }
 
 .slideshow-dots button:hover {
-    background-color: #999;
+    background-color: yellowgreen;
 }
 
 .slideshow-pager {
     height: 100%;
     width: 100%;
+    background-color: #fff;
 }
+
 
 .slideshow-pager-button {
     position: absolute;

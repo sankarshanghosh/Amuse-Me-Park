@@ -7,6 +7,7 @@
 @import "components/contact.css";
 @import "components/attractions.css";
 @import "components/booking.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
 
 html,
 body {
@@ -20,6 +21,7 @@ body {
   border: 0;
   font-size: 100%;
   line-height: 1;
+  font-weight: 600;
 }
 
 * {
@@ -38,11 +40,12 @@ section {
 }
 
 section:nth-child(odd) {
-  background-color: #aaa;
+  background-color: #e3f2fd;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-color: #e8f5e9;
+  /* bolder */
 }
 
 figure img {
