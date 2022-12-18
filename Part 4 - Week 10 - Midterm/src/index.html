@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Amuse Me Park</title>
+  <link rel="stylesheet" href="assets/stylesheets/main.css" />
+  <script src="assets/javascript/slideshow.js" async></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/Amuse_Me_Park_Logo.png" alt="Amuse Me Park Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="attractions.html#thrills">High Thrill Rides</a></li>
+          <li><a href="attractions.html#land">Land Rides</a></li>
+          <li><a href="attractions.html#water">Water Rides</a></li>
+        </ul>
+      </nav>
+      <a href="book-now.html" id="book-now"> Book Now </a>
+    </div>
+  </header>
+  <div id="banner">
+    <div class="slideshow-wrapper">
+      <!-- TODO: images go here -->
+      <div class="slideshow-image">
+        <div class="active-slide">
+          <img src="assets/images/Roller_Coaster.jpeg" alt="slideshow image" />
+        </div>
+        <div>
+          <img src="assets/images/Roller_Coaster_1.jpeg" alt="slideshow image" />
+        </div>
+        <div>
+          <img src="assets/images/Roller_Coaster_2.jpeg" alt="slideshow image" />
+        </div>
+        <div>
+          <img src="assets/images/Roller_Coaster_3.jpeg" alt="slideshow image" />
+        </div>
+        <div>
+          <img src="assets/images/Water_Ride.jpeg" alt="slideshow image" />
+        </div>
+      </div>
+      <div class="slideshow-dots">
+        <!-- slideshow buttons -->
+        <button class="active-dot"></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="slideshow-pager">
+        <button class="slideshow-pager-button left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M15.41 16.09L10.83 11.5 15.41 6.91 14 5.5 8 11.5 14 17.5z" />
+            <path d="M0-.5h24v24H0z" fill="none" />
+          </svg>
+        </button>
+        <button class="slideshow-pager-button right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M8.59 7.91L13.17 12.5 8.59 17.09 10 18.5 16 12.5 10 6.5z" />
+            <path d="M0-.5h24v24H0z" fill="none" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <section id="about">
+    <figure>
+      <!-- company image goes here -->
+      <img src="assets/images/Team_Picture.jpg" alt="slideshow image" />
+    </figure>
+    <div class="container">
+      <h1>About Us</h1>
+      <p>
+        Amuse-Me-Park is a modern theme park featuring all the attractions you
+        would want including but not limited to roller coaster, thrill rides,
+        family rides and more. Purchase your tickets today and experience the
+        best rides you can have once in a lifetime!
+      </p>
+    </div>
+  </section>
+  <section id="testimonials">
+    <h1>Testimonials</h1>
+    <div class="container">
+      <figure class="testimonial-content">
+        <img src="assets/images/Testimonials_Family_Photo.jpg" alt="A picture of a three people family" />
+        <p>
+          I love this place! I have been coming here for years and I have never regretted it. The rides are amazing and the staff is very friendly. I would recommend this place to anyone!
+        </p>
+      </figure>
+      <figure class="testimonial-content">
+        <img src="assets/images/Testimonials_Kids_Photo.jpg" alt=" A picture of 3 kids" />
+        <p>
+          We love Amuse Me Park! We can't wait for our school to bring us here every year.
+        </p>
+      </figure>
+      <figure class="testimonial-content">
+        <img src="assets/images/Testimonials_Teenager_Photo.jpg" alt="A picture of a teen girl" />
+        <p>
+          We come here with my family every month and we have a blast. The rides are amazing and the staff is very friendly. I would recommend this place to anyone!
+        </p>
+      </figure>
+    </div>
+  </section>
+  <section id="contact">
+    <h1>Contact Us</h1>
+    <div class="container">
+      <form action="#" method="POST">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Subject" />
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <input type="submit" />
+      </form>
+      <div class="contact-info">
+        <p>Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+        <p>
+          Email:
+          <a href="mailto:contact@amusemepark.fun">contact@amusemepark.fun</a>
+        </p>
+        <p>Office: 123 Amuse Me Park Way, London</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div id="copyright">
+      <p>&copy; 2022 Amuse Me Park</p>
+    </div>
+  </footer>
+</body>
+
+</html>

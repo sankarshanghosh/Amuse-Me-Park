@@ -1,0 +1,67 @@
+@import "reset-css.css";
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/slideshow.css";
+@import "components/about.css";
+@import "components/testimonials.css";
+@import "components/contact.css";
+@import "components/attractions.css";
+@import "components/booking.css";
+
+html,
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+section:nth-child(odd) {
+  background-color: #aaa;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
