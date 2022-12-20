@@ -15,12 +15,13 @@ header {
 header > .container {
     height: 75px;
     padding: 10px;
-    background-color: #ffb238;
+    background-color: #fff;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     z-index: 100;
+    border-bottom: #a40e4c 3px solid;
 }
 
 @media screen and (max-width: 768px) {
@@ -60,7 +61,7 @@ header nav li {
     transition: background-color 0.5s ease-in-out;
 }
 header nav li:hover {
-    background-color: #04142c;
+    background-color: #a40e4c;
     color: #fff;
   }
 header nav li:hover span {
@@ -97,14 +98,14 @@ header nav a:hover {
 
 header #book-now {
     color: #fff;
-    border: #04142c 3px solid;
+    border: #a40e4c 3px solid;
     margin: 0;
     padding: 10px;
     font-size: 1em;
     font-weight: 600;
     height: 100%;
     text-decoration: none;
-    background-color: #04142c;
+    background-color: #a40e4c;
     display: inline-block;
     transition: ease-in-out 0.5s;
     display: flex;

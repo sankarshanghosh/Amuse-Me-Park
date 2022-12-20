@@ -4,6 +4,8 @@ section#testimonials .container {
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
+    /* make text italic */
+    font-style: italic;
 }
 
 section#testimonials figure {
